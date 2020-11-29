@@ -1,0 +1,83 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    color: white;
+}
+.channelContainer {
+    width: 22%;
+    min-width: 250px;
+    height: auto;
+    min-height: 700px;
+    background-color: #19171d;
+    display: inline-block;
+}
+
+.channelList {
+    list-style: none;
+    background-color: red;
+}
+.itemChannel {
+    color: white;
+    background-color: blue;
+}
+
+.messagesContainer {
+    width: 78%;
+    min-width: 550px;
+    height: auto;
+    min-height: 700px;
+    background-color:#191C23;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.messageDiv{
+    width: 98%;
+    min-width: 500px;
+    height: 600px;
+    margin: 10px;
+    background-color: #191C23;
+    display: inline-block;
+    align-self: auto;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.messageDiv .msg{
+    background-color: red;
+    width: 200px;
+    height: 50px;
+    color:blue;
+
+}
+.boxButtonContainer {
+    height: auto;
+    width: 95%;
+    min-width:  500px;
+    display: flex;
+
+}
+
+.messageBox {
+    width: 80%;
+    min-width: 500px;
+    height: 30px;
+    background-color: #222529;
+    margin: 10px ;
+    display: inline-block;
+    align-content: center;
+    border-radius: 5px;
+    border: solid 1px #747779;
+    font-size: 20px;
+    color: #656769;
+    padding: 7px;
+}
+
+.button {
+    padding: 10px;
+    height: 50px;
+    width: 90px;
+    vertical-align: middle;
+}
