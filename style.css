@@ -3,6 +3,10 @@ body {
     padding: 0px;
     display: flex;
     color: white;
+<<<<<<< Updated upstream
+=======
+    height: 100vh;
+>>>>>>> Stashed changes
 }
 
 /* channel's list style*/
@@ -11,7 +15,11 @@ body {
 .channelContainer {
     width: 22%;
     min-width: 250px;
+<<<<<<< Updated upstream
     height: 100vh;
+=======
+    /* height: 100vh; */
+>>>>>>> Stashed changes
     min-height: 700px;
     background-color:yellow;
     display: flex;
@@ -23,6 +31,7 @@ body {
     display: inline-block;
     margin: 20px;
     text-align: center;
+    display: flex;
 }
 .itemChannel {
     color: white;
@@ -32,11 +41,15 @@ body {
 
 
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 /* Messages container style */
 .messagesContainer {
     width: 78%;
     min-width: 550px;
-    height: 100vh;
+    /* height: 100vh; */
     min-height: 700px;
     background-color:#191C23;
     display: flex;
