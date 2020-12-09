@@ -8,7 +8,6 @@ body {
 
 /* channel's list style*/
 
-
 .channelContainer {
     width: 22%;
     min-width: 250px;
@@ -33,17 +32,13 @@ body {
     background-color: #191C23;
     display:block;
     margin: auto;
-    font-size: 1em;
-    
-    
+    font-size: 1em;   
 }
 .itemChannel:active{
 
     background-color:#747779 ;
     border-radius: 2px;
 }
-
-
 
 /* Messages container style */
 .messagesContainer {
@@ -70,43 +65,66 @@ body {
     border-radius: 3px;
     overflow: scroll;
     scrollbar-track-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     font-family: 'Roboto', sans-serif;
 }
 
 .msgBox{
     background-color: red;
-    width: 450px;
-    height: 100px;
     color:blue;
-    display: flex;
-    flex-direction: row;
-
+    padding: 5px;
+    display: flex;  
+    align-items: flex-start;
 }
 
 .picUser{
     min-width: 50px;
     min-height: 50px;
     background-color: salmon;
+    margin: 3px;
 }
 
 .content{
     min-width: 200px;
     min-height: 50px;
     background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin:3px;
 }
 
 .content .data {
 
     min-width: 150px;
-    min-height: 30px;
+    min-height: 20px;
     background-color: gray;
     display: flex;
+    flex-direction: row;
+    margin: 3px;
 }
 
-.content .data .name {
-
+.content .data .name, .timeStamp {
+    height: 20px;
+    min-width: 100px;
+    max-width: auto;
+    background-color: black;
+    margin: 3px;
 
 }
+
+.content .text {
+    width: 300px;
+    height: 40px;
+    background-color: blue;
+    display: flex;
+    margin: 3px;
+    align-items: flex-start;
+
+}
+
 .boxButtonContainer {
     height: auto;
     width: 95%;
