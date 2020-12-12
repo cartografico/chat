@@ -58,27 +58,29 @@ body {
     min-width: 500px;
     min-height: 600px;
     margin: 10px;
-    background-color: #1F1F23;
-    display: inline-block;
-    align-self: auto;
-    overflow: hidden;
-    border-radius: 3px;
-    overflow: scroll;
-    scrollbar-track-color: black;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    background-color: #1F1F23;
+    align-self: auto;
+    border-radius: 3px;
     font-family: 'Roboto', sans-serif;
 }
 
+.wrap{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 3px;
+}
 .msgBox{
     color:white;
     padding: 5px;
     display: flex;  
     align-items: flex-start;
+    margin-bottom: 5px;
     background-color: salmon;
 }
-
 
 .picUser{
     min-width: 50px;
@@ -151,6 +153,8 @@ body {
     color: #656769;
     padding: 7px;
     align-self: center;
+    box-sizing: border-box;
+    overflow-y: scroll;
 }
 
 .button {

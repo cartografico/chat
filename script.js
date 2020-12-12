@@ -7,7 +7,6 @@
 
         const inputValue = $('.messageBox').val()
 
-
         let element = $(`<div class="msgBox">
         <div class="picUser"></div>
         <div class="content">
@@ -16,12 +15,14 @@
                 <div class="timeStamp"> 11:05</div>
             </div>
             <div class="text"> 
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa possimus earum ipsum optio? Earum, enim? Ab dolorem qui architecto repellendus mollitia maiores culpa! Tempore modi natus harum ratione nisi vel.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Culpa possimus earum ipsum optio? Earum, enim? Ab dolorem qui 
+                architecto repellendus mollitia maiores culpa! Tempore modi natus harum ratione nisi vel.
             </div>
         </div>`);
 
         
-        $(".messageDiv").append(element);
+        $(".wrap").append(element);
     
 
 //Arreglo para mensajes
