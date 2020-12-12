@@ -18,13 +18,11 @@ const arrayMsg=[
 
 
 //Imprimir mensajes
-const msgContainer = document.querySelector(".messageDiv");
+const msgContainer = document.querySelector(".msgBox");
 
 function printMessage(){
     arrayMsg.forEach(element => {
-        msgContainer.innerHTML +=`<div class"msg">${element.user}</div>`;
-        msgContainer.innerHTML +=`<div class"msg">${element.time}</div>`;
-        msgContainer.innerHTML +=`<div class"msg">${element.text}</div>`;
+        msgContainer.innerHTML +=`<div class"msgBox"></div>`;
     }
 )};
 
