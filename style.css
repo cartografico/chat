@@ -12,27 +12,31 @@ body {
     width: 22%;
     min-width: 250px;
     min-height: 400px;
-    background-color:#191C23;
+    background-color:#19161d;
     display: flex;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 
 .channelList {
+    width: 100%;
     list-style: none;
-    background-color: #191C23;
+    background-color:#19161d;
     display: block;
     position: relative;
-    margin: 10px;
-    padding: 5px;
-}100
+    margin: 0px;
+    padding: 0px;
+}
 .itemChannel {
+    width: 100%;
     height: 25px;
-    padding: 5px;
-    color: white;
-    background-color: #191C23;
+    padding: 0px;
+    margin-top: 7px;
+    color:#8d8c8f;
+    background-color:#19161d;
     display:block;
-    margin: auto;
-    font-size: 1em;   
+    
+    font-size: 0.9em;   
 }
 .itemChannel:active{
 
@@ -46,7 +50,7 @@ body {
     min-width: 550px;
     height: 100vh;
     min-height: 500px;
-    background-color:#1F1F23;
+    background-color:#1A1D21;
     display: flex;
     flex-direction: column;
     
@@ -54,14 +58,14 @@ body {
 
 .messageDiv {
     width: 97%;
-    height: auto;
+    height: 100%;
     min-width: 500px;
     min-height: 500px;
     margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-color:red;
+    background-color:#1A1D21;
     align-self: auto;
     border-radius: 3px;
     font-family: 'Roboto', sans-serif;
@@ -134,7 +138,7 @@ body {
     margin-bottom: 0px;
     display: flex;
     margin-top: auto;
-    background-color: #1F1F23;
+    background-color: #1A1D21;
 
 }
 
