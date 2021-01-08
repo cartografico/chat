@@ -69,6 +69,7 @@ body {
     align-self: auto;
     border-radius: 3px;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 .wrap{
@@ -76,20 +77,22 @@ body {
     height: 100%;
     overflow-y: scroll;
     padding: 3px;
+    scrollbar-track-color: #1A1D21;
 }
+
 .msgBox{
     color:white;
     padding: 5px;
     display: flex;  
     align-items: flex-start;
     margin-bottom: 5px;
-    background-color: salmon;
+    background-color: #1A1D21;
 }
 
 .picUser{
     min-width: 50px;
     min-height: 50px;
-    background-color: green;
+    background-color: purple;
     margin: 3px;
 }
 
@@ -110,6 +113,7 @@ body {
     display: flex;
     flex-direction: row;
     margin: 3px;
+    vertical-align: middle;
 }
 
 .content .data .name, .timeStamp {
@@ -119,6 +123,11 @@ body {
     /* background-color: black; */
     margin: 3px;
 
+}
+
+.timeStamp{
+    font-size: 0.7em;
+    padding: 3px;
 }
 
 .text {

@@ -5,6 +5,8 @@ $("form").on("submit", function (e) {
 
   let inputValue = $(".messageBox").val();
   if (inputValue.length > 0) {
+
+
     //Arreglo para mensajes
 
     const arrayMsg = [
@@ -14,6 +16,16 @@ $("form").on("submit", function (e) {
         time: "14:30",
         text: inputValue,
         },
+    ];
+
+    const channels = [
+        {
+        canal_1:{arregloMensajes:
+                    { author:"Johny5",time:"14:50",text:"texto del mensaje"},
+                    { author:"Johny5",time:"14:50",text:"texto del mensaje"},
+                    { author:"Johny5",time:"14:50",text:"texto del mensaje"}
+                }
+        }
     ];
 
     //Imprimir mensajes
@@ -35,7 +47,7 @@ $("form").on("submit", function (e) {
         msgContainer.append(msgFormat);
         });
     }
-
+    
     printMessage();
 
     let = $(".messageBox").val("");
@@ -50,7 +62,7 @@ $("form").on("submit", function (e) {
                                 <div class="picUser"></div>
                                 <div class="content">
                                     <div class="data">
-                                        <div class="name">${element.name}</div>
+                                        <div class="name">${element.email}</div>
                                         <div class="timeStamp"> 11:05</div>
                                 </div>
                                 <div class="text"> 
@@ -60,9 +72,20 @@ $("form").on("submit", function (e) {
                         </div>`;
         
                 msgContainer.append(msgFormat);
+         
                 });
+                
+                
+                const $wrap= querySelector(".wrap");  
+                setTimeout(()=>{
+                    $wrap.scrollTo(0, 500);
+            
+                }, 1000);
+                
         });
-    }   
+    }  
+    
+
 });
 
 
