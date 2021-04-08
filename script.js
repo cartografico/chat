@@ -18,15 +18,6 @@ $("form").on("submit", function (e) {
         },
     ];
 
-    const channels = [
-        {
-        canal_1:{arregloMensajes:
-                    { author:"Johny5",time:"14:50",text:"texto del mensaje"},
-                    { author:"Johny5",time:"14:50",text:"texto del mensaje"},
-                    { author:"Johny5",time:"14:50",text:"texto del mensaje"}
-                }
-        }
-    ];
 
     //Imprimir mensajes
     const msgContainer = $(".wrap");
@@ -52,40 +43,8 @@ $("form").on("submit", function (e) {
 
     let = $(".messageBox").val("");
 
-    } else {
-        const msgContainer = $(".wrap");
-        $.get("https://jsonplaceholder.typicode.com/comments", function (respuesta) {
-            console.log(respuesta);
-
-            respuesta.forEach((element) => {
-                const msgFormat = `<div class="msgBox">
-                                <div class="picUser"></div>
-                                <div class="content">
-                                    <div class="data">
-                                        <div class="name">${element.email}</div>
-                                        <div class="timeStamp"> 11:05</div>
-                                </div>
-                                <div class="text"> 
-                                    ${element.body}
-                                </div>
-                            </div>
-                        </div>`;
-        
-                msgContainer.append(msgFormat);
-         
-                });
-                
-                
-                const $wrap= querySelector(".wrap");  
-                setTimeout(()=>{
-                    $wrap.scrollTo(0, 500);
-            
-                }, 1000);
-                
-        });
-    }  
+    }
     
-
 });
 
 
